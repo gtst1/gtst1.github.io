@@ -1,8 +1,11 @@
-<script>
-if (window.opener) {
+<head><script>
+test();
+function test() {if (window.opener) {
     window.close();
 }
 else {
-window.location.href = window.location.self;
-}
-</script>
+window.location.reload();
+}}
+
+</script></head>
+<body onload="test();">
